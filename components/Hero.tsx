@@ -139,7 +139,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.92 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.9, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-          className="relative mx-auto aspect-[3/4] w-full max-w-sm"
+          className="relative mx-auto aspect-[9/16] w-full max-w-[300px]"
         >
           <div className="relative h-full w-full overflow-hidden rounded-[2rem] bg-ink shadow-2xl">
             <iframe
@@ -147,7 +147,7 @@ export default function Hero() {
               title="Présentation de la fondatrice — Halyd's Secret"
               allow="autoplay; fullscreen"
               allowFullScreen
-              className="h-full w-full"
+              className="absolute inset-0 h-full w-full border-0"
             />
           </div>
           <motion.div

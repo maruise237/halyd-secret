@@ -27,7 +27,7 @@ export const socials = {
 
 export const founderReel = "https://www.instagram.com/reel/DKwzbAnoeXQ/";
 export const founderVideoEmbed =
-  "https://drive.google.com/file/d/1y-T-7YwwE6r5g4C5hE26sinOEAAU28fZoGIqy5p1aB0/preview";
+  "https://www.youtube.com/embed/DNIk57wcJE0?rel=0&modestbranding=1&playsinline=1";
 
 export const nav = [
   { label: "Accueil", href: "#accueil" },
