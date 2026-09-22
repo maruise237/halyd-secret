@@ -9,9 +9,9 @@ export default function Boutique() {
     <section id="boutique" className="relative bg-ink py-28 text-cream sm:py-36">
       <div className="relative mx-auto max-w-4xl px-5 sm:px-8">
         <Reveal className="text-center">
-          <h2 className="font-serif-display text-4xl sm:text-5xl">
+          <h2 className="font-display text-4xl sm:text-5xl">
             Nos produits,{" "}
-            <span className="italic text-gold-soft">notre signature</span>
+            <span className="font-bold text-blush">notre signature</span>
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-sm leading-relaxed text-cream/70">
             Une gamme de produits d&rsquo;entretien et de styling pour
@@ -25,8 +25,8 @@ export default function Boutique() {
               <div className="flex items-baseline justify-between gap-6 py-6">
                 <div>
                   <div className="flex items-baseline gap-3">
-                    <h3 className="font-serif-display text-2xl">{p.name}</h3>
-                    <span className="text-[10px] uppercase tracking-[0.2em] text-gold-soft">
+                    <h3 className="font-display text-2xl">{p.name}</h3>
+                    <span className="text-[10px] uppercase tracking-[0.2em] text-blush">
                       {p.tag}
                     </span>
                   </div>
@@ -35,7 +35,7 @@ export default function Boutique() {
                   </p>
                 </div>
                 {p.price && (
-                  <span className="shrink-0 font-serif-display text-lg text-gold-soft">
+                  <span className="shrink-0 font-display text-lg text-blush">
                     {p.price}
                   </span>
                 )}
@@ -49,7 +49,7 @@ export default function Boutique() {
             href={socials.instagram}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-gold-soft/50 px-7 py-3.5 text-[12px] uppercase tracking-[0.2em] transition-all duration-300 hover:bg-gold-soft hover:text-ink"
+            className="inline-flex items-center gap-2 rounded-full border border-blush/50 px-7 py-3.5 text-[12px] uppercase tracking-[0.2em] transition-all duration-300 hover:bg-blush hover:text-ink"
           >
             <ShoppingBag size={16} strokeWidth={1.5} />
             Commander via Instagram

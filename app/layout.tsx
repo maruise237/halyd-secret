@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Manrope } from "next/font/google";
+import { Plus_Jakarta_Sans, Manrope } from "next/font/google";
 import "./globals.css";
 import { site } from "@/lib/site-config";
 
-const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  style: ["normal", "italic"],
+  weight: ["500", "600", "700", "800"],
 });
 
 const manrope = Manrope({
@@ -50,7 +49,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="fr"
-      className={`${cormorant.variable} ${manrope.variable} h-full antialiased`}
+      className={`${jakarta.variable} ${manrope.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-cream text-ink overflow-x-hidden">
         {children}

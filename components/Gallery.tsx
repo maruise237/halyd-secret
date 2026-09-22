@@ -11,9 +11,9 @@ export default function Gallery() {
     <section id="galerie" className="relative py-28 sm:py-36">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal className="mx-auto max-w-xl text-center">
-          <h2 className="font-serif-display text-4xl sm:text-5xl">
+          <h2 className="font-display text-4xl sm:text-5xl">
             Des instants{" "}
-            <span className="italic text-gold-deep">de beauté</span>
+            <span className="font-bold text-rust-deep">de beauté</span>
           </h2>
           <p className="mt-5 text-sm leading-relaxed text-ink-soft/75">
             Retrouvez l&rsquo;univers Halyd&rsquo;s Secret en images sur
@@ -43,7 +43,7 @@ export default function Gallery() {
                   size={16}
                   className="absolute right-4 top-4 text-cream/80 transition-transform duration-300 group-hover:scale-110"
                 />
-                <span className="relative p-5 font-serif-display text-lg italic text-cream">
+                <span className="relative p-5 font-display text-lg font-semibold text-cream">
                   {img.label}
                 </span>
               </motion.a>
@@ -56,7 +56,7 @@ export default function Gallery() {
             href={socials.instagram}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-gold-deep px-7 py-3.5 text-[12px] uppercase tracking-[0.2em] text-ink-soft transition-all duration-300 hover:bg-gold-deep hover:text-cream"
+            className="inline-flex items-center gap-2 rounded-full border border-rust-deep px-7 py-3.5 text-[12px] uppercase tracking-[0.2em] text-ink-soft transition-all duration-300 hover:bg-rust-deep hover:text-cream"
           >
             <InstagramIcon size={16} />
             Suivre @halyd_secret

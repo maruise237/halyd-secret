@@ -28,14 +28,14 @@ export default function Hero() {
         transition={{ duration: 1.6, ease: "easeOut" }}
         className="pointer-events-none absolute -right-20 top-1/2 -translate-y-1/2 select-none"
       >
-        <span className="font-serif-display text-[38vw] leading-none text-gold-deep">
+        <span className="font-display text-[38vw] leading-none text-rust-deep">
           H
         </span>
       </motion.div>
 
       <motion.div
         aria-hidden
-        className="animate-float-slow absolute left-[6%] top-[22%] text-gold-soft"
+        className="animate-float-slow absolute left-[6%] top-[22%] text-blush"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.6, duration: 1 }}
@@ -44,7 +44,7 @@ export default function Hero() {
       </motion.div>
       <motion.div
         aria-hidden
-        className="animate-float-slower absolute right-[14%] top-[68%] text-gold"
+        className="animate-float-slower absolute right-[14%] top-[68%] text-rust"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.9, duration: 1 }}
@@ -54,7 +54,15 @@ export default function Hero() {
 
       <div className="relative mx-auto grid w-full max-w-7xl gap-14 px-5 sm:px-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
         <div>
-          <h1 className="font-serif-display text-balance text-[13vw] leading-[0.98] text-ink sm:text-[8vw] lg:text-[5.2vw]">
+          <motion.p
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="mb-4 text-[11px] uppercase tracking-[0.3em] text-rust"
+          >
+            Institut de beauté &amp; académie
+          </motion.p>
+          <h1 className="font-display text-balance text-[13vw] leading-[0.98] text-ink sm:text-[8vw] lg:text-[5.2vw]">
             <motion.span
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -67,7 +75,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="block italic text-gold-deep"
+              className="block font-bold text-rust-deep"
             >
               qui vous ressemble
             </motion.span>
@@ -92,7 +100,7 @@ export default function Hero() {
           >
             <a
               href="#services"
-              className="rounded-full bg-ink px-7 py-3.5 text-[12px] uppercase tracking-[0.2em] text-cream transition-all duration-300 hover:bg-gold-deep"
+              className="rounded-full bg-ink px-7 py-3.5 text-[12px] uppercase tracking-[0.2em] text-cream transition-all duration-300 hover:bg-rust-deep"
             >
               Découvrir nos soins
             </a>
@@ -100,10 +108,10 @@ export default function Hero() {
               href={socials.instagram}
               target="_blank"
               rel="noreferrer"
-              className="group flex items-center gap-2 text-[12px] uppercase tracking-[0.2em] text-ink-soft transition-colors hover:text-gold-deep"
+              className="group flex items-center gap-2 text-[12px] uppercase tracking-[0.2em] text-ink-soft transition-colors hover:text-rust-deep"
             >
               Nous suivre
-              <span className="h-px w-8 bg-ink-soft transition-all duration-300 group-hover:w-12 group-hover:bg-gold-deep" />
+              <span className="h-px w-8 bg-ink-soft transition-all duration-300 group-hover:w-12 group-hover:bg-rust-deep" />
             </a>
           </motion.div>
 
@@ -111,7 +119,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.9 }}
-            className="mt-16 grid max-w-md grid-cols-3 gap-6 border-t border-gold/25 pt-6"
+            className="mt-16 grid max-w-md grid-cols-3 gap-6 border-t border-rust/25 pt-6"
           >
             {[
               ["100%", "Fait avec soin"],
@@ -119,7 +127,7 @@ export default function Hero() {
               ["★★★★★", "Clientes satisfaites"],
             ].map(([big, small]) => (
               <div key={small}>
-                <p className="font-serif-display text-2xl text-gold-deep">{big}</p>
+                <p className="font-display text-2xl text-rust-deep">{big}</p>
                 <p className="mt-1 text-[11px] uppercase tracking-wide text-ink-soft/70">
                   {small}
                 </p>
@@ -134,25 +142,23 @@ export default function Hero() {
           transition={{ duration: 0.9, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
           className="relative mx-auto aspect-[3/4] w-full max-w-sm"
         >
-          <div className="absolute -inset-3 rounded-[2.5rem] border border-gold/30" />
-          <div className="relative h-full w-full overflow-hidden rounded-[2rem] bg-gradient-to-br from-ink via-ink-soft to-gold-deep shadow-2xl">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <Image
-                src="/logo.jpg"
-                alt="Halyd's Secret"
-                width={220}
-                height={220}
-                className="rounded-full opacity-95 drop-shadow-xl"
-              />
-            </div>
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.12),transparent_45%)]" />
+          <div className="relative h-full w-full overflow-hidden rounded-[2rem] shadow-2xl">
+            <Image
+              src="/gallery/coiffure-1.jpg"
+              alt="Halyd's Secret"
+              fill
+              sizes="(min-width: 1024px) 380px, 80vw"
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-rust-deep/80 via-rust-deep/10 to-transparent" />
           </div>
           <motion.div
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute -bottom-6 -left-6 rounded-2xl bg-cream px-5 py-4 shadow-xl ring-1 ring-gold/20"
+            className="absolute -bottom-6 -left-6 rounded-2xl bg-cream px-5 py-4 shadow-xl ring-1 ring-rust/20"
           >
-            <p className="font-serif-display italic text-lg text-gold-deep">Officiellement ouvert</p>
+            <p className="font-display font-semibold text-lg text-rust-deep">Officiellement ouvert</p>
             <p className="text-[11px] uppercase tracking-wide text-ink-soft/70">Réservez votre moment</p>
           </motion.div>
         </motion.div>
@@ -164,7 +170,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, y: [0, 8, 0] }}
         transition={{ opacity: { delay: 1.2, duration: 0.6 }, y: { duration: 1.8, repeat: Infinity, ease: "easeInOut" } }}
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 text-ink-soft/60 hover:text-gold-deep transition-colors"
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 text-ink-soft/60 hover:text-rust-deep transition-colors"
       >
         <ArrowDown size={20} strokeWidth={1.3} />
       </motion.a>

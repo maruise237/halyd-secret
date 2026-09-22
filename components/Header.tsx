@@ -35,11 +35,11 @@ export default function Header() {
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-8 flex items-center justify-between">
         <a href="#accueil" className="flex items-center gap-3 group">
-          <span className="relative block h-11 w-11 sm:h-12 sm:w-12 overflow-hidden rounded-full ring-1 ring-gold/40 transition-transform duration-500 group-hover:scale-105">
+          <span className="relative block h-11 w-11 sm:h-12 sm:w-12 overflow-hidden rounded-full ring-1 ring-rust/40 transition-transform duration-500 group-hover:scale-105">
             <Image src="/logo.jpg" alt="Halyd's Secret" fill sizes="48px" className="object-cover" priority />
           </span>
-          <span className="font-serif-display text-xl sm:text-2xl tracking-wide text-ink">
-            Halyd&rsquo;s <span className="italic text-gold-deep">Secret</span>
+          <span className="font-display text-xl sm:text-2xl tracking-wide text-ink">
+            Halyd&rsquo;s <span className="font-bold text-rust-deep">Secret</span>
           </span>
         </a>
 
@@ -48,7 +48,7 @@ export default function Header() {
             <a
               key={item.href}
               href={item.href}
-              className="relative text-[13px] tracking-[0.18em] uppercase text-ink-soft transition-colors hover:text-gold-deep after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-gold after:transition-all after:duration-300 hover:after:w-full"
+              className="relative text-[13px] tracking-[0.18em] uppercase text-ink-soft transition-colors hover:text-rust-deep after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-rust after:transition-all after:duration-300 hover:after:w-full"
             >
               {item.label}
             </a>
@@ -56,15 +56,15 @@ export default function Header() {
         </nav>
 
         <div className="hidden lg:flex items-center gap-4">
-          <a href={socials.instagram} target="_blank" rel="noreferrer" aria-label="Instagram" className="text-ink-soft hover:text-gold-deep transition-colors">
+          <a href={socials.instagram} target="_blank" rel="noreferrer" aria-label="Instagram" className="text-ink-soft hover:text-rust-deep transition-colors">
             <InstagramIcon size={18} />
           </a>
-          <a href={socials.facebook} target="_blank" rel="noreferrer" aria-label="Facebook" className="text-ink-soft hover:text-gold-deep transition-colors">
+          <a href={socials.facebook} target="_blank" rel="noreferrer" aria-label="Facebook" className="text-ink-soft hover:text-rust-deep transition-colors">
             <FacebookIcon size={18} />
           </a>
           <a
             href="#contact"
-            className="ml-2 rounded-full border border-gold-deep px-5 py-2 text-[12px] tracking-[0.18em] uppercase text-ink-soft transition-all duration-300 hover:bg-gold-deep hover:text-cream"
+            className="ml-2 rounded-full border border-rust-deep px-5 py-2 text-[12px] tracking-[0.18em] uppercase text-ink-soft transition-all duration-300 hover:bg-rust-deep hover:text-cream"
           >
             Nous contacter
           </a>
@@ -97,7 +97,7 @@ export default function Header() {
               className="absolute right-0 top-0 h-full w-[82%] max-w-sm bg-cream px-8 py-7 flex flex-col"
             >
               <div className="flex items-center justify-between mb-10">
-                <span className="font-serif-display text-xl">Menu</span>
+                <span className="font-display text-xl">Menu</span>
                 <button onClick={() => setOpen(false)} aria-label="Fermer">
                   <X size={24} strokeWidth={1.5} />
                 </button>
@@ -111,7 +111,7 @@ export default function Header() {
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.08 * i, duration: 0.4 }}
-                    className="font-serif-display text-3xl text-ink-soft hover:text-gold-deep transition-colors"
+                    className="font-display text-3xl text-ink-soft hover:text-rust-deep transition-colors"
                   >
                     {item.label}
                   </motion.a>

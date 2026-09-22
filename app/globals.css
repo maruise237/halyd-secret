@@ -1,24 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  --cream: #f7f2e7;
-  --cream-soft: #efe6d3;
-  --ink: #17130f;
-  --ink-soft: #2a231b;
-  --gold: #b3894f;
-  --gold-soft: #d9bd8b;
-  --gold-deep: #8a6634;
+  --cream: #fdf9f6;
+  --cream-soft: #f3e9e3;
+  --blush: #d7bdb0;
+  --ink: #1a0f0f;
+  --ink-soft: #635954;
+  --taupe: #978a82;
+  --taupe-soft: #aaa095;
+  --rust: #954e3b;
+  --rust-deep: #612e20;
 }
 
 @theme inline {
   --color-cream: var(--cream);
   --color-cream-soft: var(--cream-soft);
+  --color-blush: var(--blush);
   --color-ink: var(--ink);
   --color-ink-soft: var(--ink-soft);
-  --color-gold: var(--gold);
-  --color-gold-soft: var(--gold-soft);
-  --color-gold-deep: var(--gold-deep);
-  --font-serif: var(--font-cormorant);
+  --color-taupe: var(--taupe);
+  --color-taupe-soft: var(--taupe-soft);
+  --color-rust: var(--rust);
+  --color-rust-deep: var(--rust-deep);
+  --font-display: var(--font-jakarta);
   --font-sans: var(--font-manrope);
 }
 
@@ -37,11 +41,10 @@ section {
 }
 
 ::selection {
-  background: var(--gold);
+  background: var(--rust);
   color: var(--cream);
 }
 
-/* thin gold scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -49,16 +52,15 @@ section {
   background: var(--cream);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--gold-soft);
+  background: var(--taupe-soft);
   border-radius: 999px;
   border: 2px solid var(--cream);
 }
 
-.font-serif-display {
-  font-family: var(--font-cormorant), serif;
+.font-display {
+  font-family: var(--font-jakarta), sans-serif;
 }
 
-/* seamless marquee */
 @keyframes marquee {
   from {
     transform: translateX(0);

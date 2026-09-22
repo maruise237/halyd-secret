@@ -96,6 +96,55 @@ export const products = [
   },
 ];
 
+export const stats = [
+  { value: "6+", label: "Services experts" },
+  { value: "100%", label: "Fait avec soin" },
+  { value: "5★", label: "Clientes satisfaites" },
+];
+
+export const differentiators = [
+  {
+    title: "Équipe expérimentée",
+    desc: "Une équipe formée et passionnée, à l'écoute de chaque cliente.",
+    icon: "BadgeCheck",
+  },
+  {
+    title: "Hygiène irréprochable",
+    desc: "Un cadre propre et confortable, pour votre sécurité et votre confort.",
+    icon: "ShieldCheck",
+  },
+  {
+    title: "Suivi personnalisé",
+    desc: "Des conseils et soins adaptés à vos besoins et à vos envies.",
+    icon: "Heart",
+  },
+  {
+    title: "Formation certifiée",
+    desc: "Une académie qui transmet un vrai savoir-faire professionnel.",
+    icon: "GraduationCap",
+  },
+];
+
+// Conseils génériques — à remplacer par vos propres articles/astuces au fil du temps.
+export const tips = [
+  {
+    title: "Comment entretenir votre lace wig",
+    desc: "Les gestes simples pour préserver la tenue et la couleur de votre lace au quotidien.",
+  },
+  {
+    title: "Choisir la perruque adaptée à votre visage",
+    desc: "Longueur, texture, couleur : nos conseils pour un choix qui vous ressemble.",
+  },
+  {
+    title: "Un maquillage qui tient toute la soirée",
+    desc: "Nos astuces de pro pour un teint impeccable du matin au soir.",
+  },
+  {
+    title: "Préparer sa pose frontale",
+    desc: "Les bons produits et les bons gestes pour une pose nette et durable.",
+  },
+];
+
 // Ajoutez vos photos dans public/gallery/ puis référencez-les ici.
 export const galleryImages = [
   { src: "/gallery/perruque-1.jpg", label: "Lace Wig", span: "sm:row-span-2" },
