@@ -1,11 +1,21 @@
 "use client";
 
-import Script from "next/script";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowDown, Sparkles } from "lucide-react";
-import { site, socials, founderVideoEmbed } from "@/lib/site-config";
+import { ArrowDown, Sparkles, Volume2, VolumeX } from "lucide-react";
+import { site, socials } from "@/lib/site-config";
 
 export default function Hero() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [muted, setMuted] = useState(true);
+
+  const toggleSound = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !videoRef.current.muted;
+      setMuted(videoRef.current.muted);
+    }
+  };
+
   return (
     <section
       id="accueil"
@@ -143,16 +153,24 @@ export default function Hero() {
           className="relative mx-auto aspect-[9/16] w-full max-w-[300px]"
         >
           <div className="relative h-full w-full overflow-hidden rounded-md bg-ink shadow-2xl">
-            <iframe
-              src={founderVideoEmbed}
-              title="Présentation de la fondatrice — Halyd's Secret"
-              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-              allowFullScreen
-              referrerPolicy="strict-origin-when-cross-origin"
-              className="absolute inset-0 h-full w-full border-0"
+            <video
+              ref={videoRef}
+              src="/video/fondatrice.mp4"
+              poster="/video/fondatrice-poster.jpg"
+              autoPlay
+              muted={muted}
+              loop
+              playsInline
+              className="absolute inset-0 h-full w-full object-cover"
             />
+            <button
+              onClick={toggleSound}
+              aria-label={muted ? "Activer le son" : "Couper le son"}
+              className="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-ink/50 text-surface backdrop-blur-sm transition-colors hover:bg-ink/70"
+            >
+              {muted ? <VolumeX size={16} /> : <Volume2 size={16} />}
+            </button>
           </div>
-          <Script src="https://player.vimeo.com/api/player.js" strategy="lazyOnload" />
           <motion.div
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
