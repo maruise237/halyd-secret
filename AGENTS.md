@@ -1,3 +1,10 @@
+# Halyd's Secret — Notes pour agents IA
+
+Site vitrine Next.js (App Router) + Tailwind + Framer Motion. Le contenu
+éditable (textes, réseaux sociaux, services, produits) vit dans
+`lib/site-config.ts`. Voir `README.md` pour les instructions de lancement
+et de déploiement.
+
 <!-- BEGIN:nextjs-agent-rules -->
 
 # This is NOT the Next.js you know

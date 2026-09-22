@@ -28,12 +28,12 @@ export default function Boutique() {
             La collection
           </p>
           <h2 className="mt-4 font-serif-display text-4xl sm:text-5xl">
-            Nos cosmétiques,{" "}
+            Nos produits,{" "}
             <span className="italic text-gold-soft">notre signature</span>
           </h2>
           <p className="mt-5 text-sm leading-relaxed text-cream/70">
-            Une gamme de produits formulés pour prolonger, chez vous,
-            l&rsquo;expérience Halyd&rsquo;s Secret.
+            Une gamme de produits d&rsquo;entretien et de styling pour
+            prolonger, chez vous, l&rsquo;expérience Halyd&rsquo;s Secret.
           </p>
         </Reveal>
 
@@ -58,6 +58,11 @@ export default function Boutique() {
                   <p className="mt-2 flex-1 text-[13px] leading-relaxed text-cream/60">
                     {p.desc}
                   </p>
+                  {p.price && (
+                    <p className="mt-3 text-sm font-medium text-gold-soft">
+                      {p.price}
+                    </p>
+                  )}
                 </div>
               </motion.div>
             </Reveal>

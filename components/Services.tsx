@@ -6,8 +6,8 @@ import {
   Scissors,
   Brush,
   Hand,
-  Flower2,
-  Feather,
+  SprayCan,
+  GraduationCap,
   LucideIcon,
 } from "lucide-react";
 import Reveal from "./Reveal";
@@ -18,8 +18,8 @@ const icons: Record<string, LucideIcon> = {
   Scissors,
   Brush,
   Hand,
-  Flower2,
-  Feather,
+  SprayCan,
+  GraduationCap,
 };
 
 export default function Services() {
