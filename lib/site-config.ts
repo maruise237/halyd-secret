@@ -26,8 +26,7 @@ export const socials = {
 };
 
 export const founderReel = "https://www.instagram.com/reel/DKwzbAnoeXQ/";
-export const founderVideoEmbed =
-  "https://player.vimeo.com/video/1229050367?title=0&byline=0&portrait=0";
+// Vidéo hébergée localement : public/video/fondatrice.mp4
 
 export const nav = [
   { label: "Accueil", href: "#accueil" },

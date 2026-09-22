@@ -23,7 +23,7 @@ export default function Newsletter() {
   return (
     <section className="relative py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
-        <div className="grid overflow-hidden rounded-[2rem] bg-cream-soft/60 lg:grid-cols-2">
+        <div className="grid overflow-hidden rounded-md bg-gold/[0.06] lg:grid-cols-2">
           <div className="relative hidden min-h-[280px] lg:block">
             <Image
               src="/gallery/perruque-3.jpg"
@@ -35,11 +35,11 @@ export default function Newsletter() {
           </div>
           <div className="p-8 sm:p-12">
             <Reveal>
-              <h2 className="font-display text-3xl">
+              <h2 className="text-display-md">
                 Restez au courant de{" "}
-                <span className="font-bold text-rust">nos conseils</span>
+                <span className="font-bold text-gold">nos conseils</span>
               </h2>
-              <p className="mt-4 max-w-sm text-sm leading-relaxed text-ink-soft/75">
+              <p className="mt-4 max-w-sm text-sm leading-relaxed text-ink/75">
                 Recevez nos astuces beauté et nos actualités directement par
                 email.
               </p>
@@ -51,20 +51,20 @@ export default function Newsletter() {
                   type="email"
                   name="email"
                   placeholder="Votre email"
-                  className="w-full rounded-full border border-rust/25 bg-cream px-5 py-3 text-sm outline-none placeholder:text-ink-soft/50 focus:border-rust"
+                  className="w-full rounded-full border border-gold/25 bg-surface px-5 py-3 text-sm outline-none placeholder:text-ink/50 focus:border-gold"
                 />
                 <motion.button
                   whileHover={{ scale: 1.04 }}
                   whileTap={{ scale: 0.97 }}
                   type="submit"
                   aria-label="S'inscrire"
-                  className="flex shrink-0 items-center justify-center rounded-full bg-rust px-5 text-cream transition-colors hover:bg-rust-deep"
+                  className="flex shrink-0 items-center justify-center rounded-full bg-gold px-5 text-ink transition-colors hover:bg-ink hover:text-surface"
                 >
                   <Send size={16} strokeWidth={1.8} />
                 </motion.button>
               </form>
               {sent && (
-                <p className="mt-3 text-[12px] text-rust">
+                <p className="mt-3 text-[12px] text-gold">
                   Votre messagerie va s&rsquo;ouvrir pour confirmer votre
                   inscription ✦
                 </p>
