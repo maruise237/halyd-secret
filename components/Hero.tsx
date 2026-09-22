@@ -145,7 +145,7 @@ export default function Hero() {
             <iframe
               src={founderVideoEmbed}
               title="Présentation de la fondatrice — Halyd's Secret"
-              allow="autoplay; fullscreen"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
               allowFullScreen
               className="absolute inset-0 h-full w-full border-0"
             />

@@ -27,7 +27,7 @@ export const socials = {
 
 export const founderReel = "https://www.instagram.com/reel/DKwzbAnoeXQ/";
 export const founderVideoEmbed =
-  "https://www.youtube.com/embed/DNIk57wcJE0?rel=0&modestbranding=1&playsinline=1";
+  "https://player.vimeo.com/video/1229050367?title=0&byline=0&portrait=0";
 
 export const nav = [
   { label: "Accueil", href: "#accueil" },
