@@ -39,7 +39,6 @@ export default function InstagramEmbed({ url }: { url: string }) {
     <div ref={ref} className="instagram-embed-wrapper mx-auto w-full max-w-[400px]">
       <blockquote
         className="instagram-media"
-        data-instgrm-captioned=""
         data-instgrm-permalink={url}
         data-instgrm-version="14"
         style={{ background: "#FFF", borderRadius: "1rem", width: "100%", margin: 0 }}
