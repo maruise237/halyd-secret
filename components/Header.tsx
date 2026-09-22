@@ -29,17 +29,17 @@ export default function Header() {
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-cream/90 backdrop-blur-md shadow-[0_1px_0_rgba(179,137,79,0.25)] py-2"
+          ? "bg-surface/90 backdrop-blur-md shadow-[0_1px_0_rgba(179,137,79,0.25)] py-2"
           : "bg-transparent py-5"
       }`}
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-8 flex items-center justify-between">
         <a href="#accueil" className="flex items-center gap-3 group">
-          <span className="relative block h-11 w-11 sm:h-12 sm:w-12 overflow-hidden rounded-full ring-1 ring-rust/40 transition-transform duration-500 group-hover:scale-105">
+          <span className="relative block h-11 w-11 sm:h-12 sm:w-12 overflow-hidden rounded-full ring-1 ring-gold/40 transition-transform duration-500 group-hover:scale-105">
             <Image src="/logo.jpg" alt="Halyd's Secret" fill sizes="48px" className="object-cover" priority />
           </span>
-          <span className="font-display text-xl sm:text-2xl tracking-wide text-ink">
-            Halyd&rsquo;s <span className="font-bold text-rust-deep">Secret</span>
+          <span className="text-xl sm:text-2xl tracking-wide text-ink">
+            Halyd&rsquo;s <span className="font-bold text-gold">Secret</span>
           </span>
         </a>
 
@@ -48,7 +48,7 @@ export default function Header() {
             <a
               key={item.href}
               href={item.href}
-              className="relative text-[13px] tracking-[0.18em] uppercase text-ink-soft transition-colors hover:text-rust-deep after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-rust after:transition-all after:duration-300 hover:after:w-full"
+              className="relative text-[13px] tracking-[0.18em] uppercase text-ink transition-colors hover:text-gold after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-gold after:transition-all after:duration-300 hover:after:w-full"
             >
               {item.label}
             </a>
@@ -56,15 +56,15 @@ export default function Header() {
         </nav>
 
         <div className="hidden lg:flex items-center gap-4">
-          <a href={socials.instagram} target="_blank" rel="noreferrer" aria-label="Instagram" className="text-ink-soft hover:text-rust-deep transition-colors">
+          <a href={socials.instagram} target="_blank" rel="noreferrer" aria-label="Instagram" className="text-ink transition-colors hover:text-gold">
             <InstagramIcon size={18} />
           </a>
-          <a href={socials.facebook} target="_blank" rel="noreferrer" aria-label="Facebook" className="text-ink-soft hover:text-rust-deep transition-colors">
+          <a href={socials.facebook} target="_blank" rel="noreferrer" aria-label="Facebook" className="text-ink transition-colors hover:text-gold">
             <FacebookIcon size={18} />
           </a>
           <a
             href="#contact"
-            className="ml-2 rounded-full border border-rust-deep px-5 py-2 text-[12px] tracking-[0.18em] uppercase text-ink-soft transition-all duration-300 hover:bg-rust-deep hover:text-cream"
+            className="ml-2 rounded-full bg-gold px-5 py-2 text-[12px] tracking-[0.18em] uppercase text-ink transition-all duration-300 hover:bg-ink hover:text-surface"
           >
             Nous contacter
           </a>
@@ -73,7 +73,7 @@ export default function Header() {
         <button
           onClick={() => setOpen(true)}
           aria-label="Ouvrir le menu"
-          className="lg:hidden text-ink-soft"
+          className="lg:hidden text-ink"
         >
           <Menu size={26} strokeWidth={1.5} />
         </button>
@@ -94,10 +94,10 @@ export default function Header() {
               exit={{ x: "100%" }}
               transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
               onClick={(e) => e.stopPropagation()}
-              className="absolute right-0 top-0 h-full w-[82%] max-w-sm bg-cream px-8 py-7 flex flex-col"
+              className="absolute right-0 top-0 h-full w-[82%] max-w-sm bg-surface px-8 py-7 flex flex-col"
             >
               <div className="flex items-center justify-between mb-10">
-                <span className="font-display text-xl">Menu</span>
+                <span className="text-xl">Menu</span>
                 <button onClick={() => setOpen(false)} aria-label="Fermer">
                   <X size={24} strokeWidth={1.5} />
                 </button>
@@ -111,7 +111,7 @@ export default function Header() {
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.08 * i, duration: 0.4 }}
-                    className="font-display text-3xl text-ink-soft hover:text-rust-deep transition-colors"
+                    className="text-3xl text-ink transition-colors hover:text-gold"
                   >
                     {item.label}
                   </motion.a>

@@ -1,29 +1,43 @@
 @import "tailwindcss";
 
+/* Tokens from the Halyd's Secret design system (derived from the logo). */
 :root {
-  --cream: #fdf9f6;
-  --cream-soft: #f3e9e3;
-  --blush: #d7bdb0;
-  --ink: #1a0f0f;
-  --ink-soft: #635954;
-  --taupe: #978a82;
-  --taupe-soft: #aaa095;
-  --rust: #954e3b;
-  --rust-deep: #612e20;
+  --gold: #b68c40;
+  --ink: #000000;
+  --surface: #ffffff;
+  --on-gold: #000000;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-full: 9999px;
 }
 
 @theme inline {
-  --color-cream: var(--cream);
-  --color-cream-soft: var(--cream-soft);
-  --color-blush: var(--blush);
+  --color-gold: var(--gold);
   --color-ink: var(--ink);
-  --color-ink-soft: var(--ink-soft);
-  --color-taupe: var(--taupe);
-  --color-taupe-soft: var(--taupe-soft);
-  --color-rust: var(--rust);
-  --color-rust-deep: var(--rust-deep);
-  --font-display: var(--font-jakarta);
+  --color-surface: var(--surface);
+  --color-on-gold: var(--on-gold);
+
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-full: var(--radius-full);
+
   --font-sans: var(--font-manrope);
+
+  /* Text styles: display-lg, display-md, heading, body, caption */
+  --text-display-lg: 40px;
+  --text-display-lg--line-height: 44px;
+  --text-display-lg--font-weight: 700;
+  --text-display-md: 28px;
+  --text-display-md--line-height: 34px;
+  --text-display-md--font-weight: 700;
+  --text-heading: 20px;
+  --text-heading--line-height: 26px;
+  --text-heading--font-weight: 600;
+  --text-body: 16px;
+  --text-body--line-height: 24px;
+  --text-caption: 13px;
+  --text-caption--line-height: 18px;
 }
 
 html {
@@ -31,9 +45,9 @@ html {
 }
 
 body {
-  background: var(--cream);
+  background: var(--surface);
   color: var(--ink);
-  font-family: var(--font-sans), sans-serif;
+  font-family: var(--font-sans), system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
 section {
@@ -41,24 +55,20 @@ section {
 }
 
 ::selection {
-  background: var(--rust);
-  color: var(--cream);
+  background: var(--gold);
+  color: var(--on-gold);
 }
 
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--cream);
+  background: var(--surface);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--taupe-soft);
-  border-radius: 999px;
-  border: 2px solid var(--cream);
-}
-
-.font-display {
-  font-family: var(--font-jakarta), sans-serif;
+  background: color-mix(in srgb, var(--gold) 45%, transparent);
+  border-radius: var(--radius-full);
+  border: 2px solid var(--surface);
 }
 
 @keyframes marquee {

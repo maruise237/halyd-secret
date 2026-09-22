@@ -1,13 +1,7 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Manrope } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 import { site } from "@/lib/site-config";
-
-const jakarta = Plus_Jakarta_Sans({
-  variable: "--font-jakarta",
-  subsets: ["latin"],
-  weight: ["500", "600", "700", "800"],
-});
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -49,9 +43,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="fr"
-      className={`${jakarta.variable} ${manrope.variable} h-full antialiased`}
+      className={`${manrope.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-cream text-ink overflow-x-hidden">
+      <body className="min-h-full flex flex-col bg-surface text-ink overflow-x-hidden">
         {children}
       </body>
     </html>
