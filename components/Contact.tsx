@@ -25,12 +25,9 @@ export default function Contact() {
     <section id="contact" className="relative bg-ink py-28 text-cream sm:py-36">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal className="mx-auto max-w-xl text-center">
-          <p className="text-[11px] uppercase tracking-[0.3em] text-gold-soft">
-            Contact
-          </p>
-          <h2 className="mt-4 font-serif-display text-4xl sm:text-5xl">
+          <h2 className="font-display text-4xl sm:text-5xl">
             Prenons{" "}
-            <span className="italic text-gold-soft">rendez-vous</span>
+            <span className="font-bold text-blush">rendez-vous</span>
           </h2>
           <p className="mt-5 text-sm leading-relaxed text-cream/70">
             Une question, une envie de vous faire plaisir ? Écrivez-nous ou
@@ -45,9 +42,9 @@ export default function Contact() {
               <InfoRow icon={<AtSign size={18} strokeWidth={1.4} />} label="Téléphone" value={site.phone} />
               <InfoRow icon={<Mail size={18} strokeWidth={1.4} />} label="Email" value={site.email} />
               <div className="flex items-start gap-3">
-                <span className="mt-0.5 text-gold-soft"><Clock size={18} strokeWidth={1.4} /></span>
+                <span className="mt-0.5 text-blush"><Clock size={18} strokeWidth={1.4} /></span>
                 <div>
-                  <p className="text-[11px] uppercase tracking-[0.2em] text-gold-soft">Horaires</p>
+                  <p className="text-[11px] uppercase tracking-[0.2em] text-blush">Horaires</p>
                   <div className="mt-1 space-y-0.5">
                     {site.hours.map((h) => (
                       <p key={h.day} className="text-[13.5px] text-cream/75">
@@ -59,13 +56,13 @@ export default function Contact() {
               </div>
 
               <div className="mt-auto flex items-center gap-4 border-t border-cream/10 pt-6">
-                <a href={socials.instagram} target="_blank" rel="noreferrer" aria-label="Instagram" className="flex h-10 w-10 items-center justify-center rounded-full border border-cream/20 transition-colors hover:border-gold-soft hover:text-gold-soft">
+                <a href={socials.instagram} target="_blank" rel="noreferrer" aria-label="Instagram" className="flex h-10 w-10 items-center justify-center rounded-full border border-cream/20 transition-colors hover:border-blush hover:text-blush">
                   <InstagramIcon size={17} />
                 </a>
-                <a href={socials.facebook} target="_blank" rel="noreferrer" aria-label="Facebook" className="flex h-10 w-10 items-center justify-center rounded-full border border-cream/20 transition-colors hover:border-gold-soft hover:text-gold-soft">
+                <a href={socials.facebook} target="_blank" rel="noreferrer" aria-label="Facebook" className="flex h-10 w-10 items-center justify-center rounded-full border border-cream/20 transition-colors hover:border-blush hover:text-blush">
                   <FacebookIcon size={17} />
                 </a>
-                <a href={socials.threads} target="_blank" rel="noreferrer" aria-label="Threads" className="flex h-10 w-10 items-center justify-center rounded-full border border-cream/20 transition-colors hover:border-gold-soft hover:text-gold-soft">
+                <a href={socials.threads} target="_blank" rel="noreferrer" aria-label="Threads" className="flex h-10 w-10 items-center justify-center rounded-full border border-cream/20 transition-colors hover:border-blush hover:text-blush">
                   <ThreadsIcon size={17} />
                 </a>
               </div>
@@ -79,14 +76,14 @@ export default function Contact() {
                   required
                   name="name"
                   placeholder="Votre nom"
-                  className="rounded-xl border border-cream/15 bg-transparent px-4 py-3 text-sm outline-none placeholder:text-cream/40 focus:border-gold-soft"
+                  className="rounded-xl border border-cream/15 bg-transparent px-4 py-3 text-sm outline-none placeholder:text-cream/40 focus:border-blush"
                 />
                 <input
                   required
                   type="email"
                   name="email"
                   placeholder="Votre email"
-                  className="rounded-xl border border-cream/15 bg-transparent px-4 py-3 text-sm outline-none placeholder:text-cream/40 focus:border-gold-soft"
+                  className="rounded-xl border border-cream/15 bg-transparent px-4 py-3 text-sm outline-none placeholder:text-cream/40 focus:border-blush"
                 />
               </div>
               <textarea
@@ -94,19 +91,19 @@ export default function Contact() {
                 name="message"
                 rows={5}
                 placeholder="Votre message"
-                className="resize-none rounded-xl border border-cream/15 bg-transparent px-4 py-3 text-sm outline-none placeholder:text-cream/40 focus:border-gold-soft"
+                className="resize-none rounded-xl border border-cream/15 bg-transparent px-4 py-3 text-sm outline-none placeholder:text-cream/40 focus:border-blush"
               />
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 type="submit"
-                className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-gold-soft px-6 py-3.5 text-[12px] uppercase tracking-[0.2em] text-ink transition-colors hover:bg-cream"
+                className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-blush px-6 py-3.5 text-[12px] uppercase tracking-[0.2em] text-ink transition-colors hover:bg-cream"
               >
                 <Send size={15} strokeWidth={1.6} />
                 Envoyer le message
               </motion.button>
               {sent && (
-                <p className="text-center text-[12px] text-gold-soft">
+                <p className="text-center text-[12px] text-blush">
                   Votre messagerie va s&rsquo;ouvrir pour finaliser l&rsquo;envoi ✦
                 </p>
               )}
@@ -121,9 +118,9 @@ export default function Contact() {
 function InfoRow({ icon, label, value }: { icon: React.ReactNode; label: string; value: string }) {
   return (
     <div className="flex items-start gap-3">
-      <span className="mt-0.5 text-gold-soft">{icon}</span>
+      <span className="mt-0.5 text-blush">{icon}</span>
       <div>
-        <p className="text-[11px] uppercase tracking-[0.2em] text-gold-soft">{label}</p>
+        <p className="text-[11px] uppercase tracking-[0.2em] text-blush">{label}</p>
         <p className="mt-1 text-[13.5px] text-cream/75">{value}</p>
       </div>
     </div>

@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Impeccable design skill (local AI-tooling install, not part of the site)
+.claude/skills/impeccable/
+.claude/agents/impeccable-*.md
+.impeccable/

@@ -2,15 +2,16 @@
 
 export const site = {
   name: "Halyd's Secret",
-  tagline: "L'art du soin, le secret de l'éclat",
+  tagline: "Salon de beauté et académie",
   description:
-    "Institut de beauté et maison de cosmétiques Halyd's Secret : soins du visage, coiffure, maquillage et produits cosmétiques d'exception.",
+    "Halyd's Secret : perruques lace wigs, coiffure, maquillage, onglerie, produits d'entretien lace et formation professionnelle.",
   url: "https://halyd-secret.vercel.app",
-  // TODO: remplacez par vos vraies coordonnées
-  phone: "+237 6XX XX XX XX",
-  whatsapp: "https://wa.me/2376XXXXXXXX",
+  phone: "+237 698 53 20 02",
+  whatsapp: "https://wa.me/237698532002",
+  // TODO: remplacez par votre vraie adresse email
   email: "contact@halydsecret.com",
-  address: "Adresse de l'institut — à compléter",
+  address: "Ancienne pharmacie Kotto, Bonamoussadi",
+  // TODO: confirmez les horaires exacts
   hours: [
     { day: "Lundi — Vendredi", time: "09h00 — 19h00" },
     { day: "Samedi", time: "09h00 — 20h00" },
@@ -25,6 +26,8 @@ export const socials = {
 };
 
 export const founderReel = "https://www.instagram.com/reel/DKwzbAnoeXQ/";
+export const founderVideoEmbed =
+  "https://player.vimeo.com/video/1229050367?title=0&byline=0&portrait=0";
 
 export const nav = [
   { label: "Accueil", href: "#accueil" },
@@ -37,12 +40,12 @@ export const nav = [
 
 export const services = [
   {
-    title: "Soins du visage",
-    desc: "Nettoyage en profondeur, hydratation et éclat sur-mesure pour révéler votre peau.",
+    title: "Perruques & Lace Wigs",
+    desc: "Vente et location de perruques, pose et personnalisation sur-mesure.",
     icon: "Sparkles",
   },
   {
-    title: "Coiffure & Styling",
+    title: "Coiffure Femme",
     desc: "Coupe, coloration et coiffage haute précision, pensés pour votre personnalité.",
     icon: "Scissors",
   },
@@ -53,42 +56,106 @@ export const services = [
   },
   {
     title: "Manucure & Pédicure",
-    desc: "Soins des mains et des pieds, finitions impeccables et durables.",
+    desc: "Nail art, gel et finitions impeccables, du naturel à l'audacieux.",
     icon: "Hand",
   },
   {
-    title: "Massage & Spa",
-    desc: "Un moment de détente absolue pour le corps et l'esprit.",
-    icon: "Flower2",
+    title: "Produits pose frontale",
+    desc: "Vente de cheveux et produits d'entretien pour lace front d'exception.",
+    icon: "SprayCan",
   },
   {
-    title: "Épilation",
-    desc: "Techniques douces et précises pour une peau lisse en toute confiance.",
-    icon: "Feather",
+    title: "Académie & Formation",
+    desc: "Formation professionnelle en coiffure, maquillage et pose de perruques.",
+    icon: "GraduationCap",
   },
 ];
 
 export const products = [
   {
-    name: "Sérum Éclat",
-    tag: "Visage",
-    desc: "Concentré d'actifs pour une peau lumineuse et repulpée.",
+    name: "Dyed Mousse",
+    tag: "Entretien lace",
+    desc: "Mousse teintée pour lace, action immédiate et longue tenue. Existe en 4 teintes.",
+    price: "6 500 FCFA",
+    icon: "Droplet",
   },
   {
-    name: "Crème Secrète",
-    tag: "Hydratation",
-    desc: "Hydratation intense formulée avec des ingrédients naturels.",
+    name: "Lace Tint Spray",
+    tag: "Entretien lace",
+    desc: "Spray teinté pour tulle, change la couleur de la lace pour matcher votre peau.",
+    price: "6 000 FCFA",
+    icon: "SprayCan",
   },
   {
-    name: "Huile Précieuse",
-    tag: "Cheveux",
-    desc: "Nourrit, discipline et fait briller les cheveux les plus rebelles.",
+    name: "Melting Spray",
+    tag: "Styling",
+    desc: "Fond la lace sans colle, pour une pose nette et une tenue renforcée.",
+    icon: "Wind",
   },
   {
-    name: "Baume Signature",
-    tag: "Corps",
-    desc: "Un baume soyeux à la fragrance signature Halyd's Secret.",
+    name: "Hair Wax Stick",
+    tag: "Styling",
+    desc: "Stick coiffant pour discipliner les baby hairs et fixer les finitions.",
+    icon: "Package",
   },
+];
+
+export const stats = [
+  { value: "6+", label: "Services experts" },
+  { value: "100%", label: "Fait avec soin" },
+  { value: "5★", label: "Clientes satisfaites" },
+];
+
+export const differentiators = [
+  {
+    title: "Équipe expérimentée",
+    desc: "Une équipe formée et passionnée, à l'écoute de chaque cliente.",
+    icon: "BadgeCheck",
+  },
+  {
+    title: "Hygiène irréprochable",
+    desc: "Un cadre propre et confortable, pour votre sécurité et votre confort.",
+    icon: "ShieldCheck",
+  },
+  {
+    title: "Suivi personnalisé",
+    desc: "Des conseils et soins adaptés à vos besoins et à vos envies.",
+    icon: "Heart",
+  },
+  {
+    title: "Formation certifiée",
+    desc: "Une académie qui transmet un vrai savoir-faire professionnel.",
+    icon: "GraduationCap",
+  },
+];
+
+// Conseils génériques — à remplacer par vos propres articles/astuces au fil du temps.
+export const tips = [
+  {
+    title: "Comment entretenir votre lace wig",
+    desc: "Les gestes simples pour préserver la tenue et la couleur de votre lace au quotidien.",
+  },
+  {
+    title: "Choisir la perruque adaptée à votre visage",
+    desc: "Longueur, texture, couleur : nos conseils pour un choix qui vous ressemble.",
+  },
+  {
+    title: "Un maquillage qui tient toute la soirée",
+    desc: "Nos astuces de pro pour un teint impeccable du matin au soir.",
+  },
+  {
+    title: "Préparer sa pose frontale",
+    desc: "Les bons produits et les bons gestes pour une pose nette et durable.",
+  },
+];
+
+// Ajoutez vos photos dans public/gallery/ puis référencez-les ici.
+export const galleryImages = [
+  { src: "/gallery/perruque-1.jpg", label: "Lace Wig", span: "sm:row-span-2" },
+  { src: "/gallery/coiffure-1.jpg", label: "Coiffure" },
+  { src: "/gallery/maquillage-1.jpg", label: "Maquillage" },
+  { src: "/gallery/perruque-2.jpg", label: "Perruque", span: "sm:row-span-2" },
+  { src: "/gallery/perruque-3.jpg", label: "Perruque" },
 ];
 
 export const testimonials = [
