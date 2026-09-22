@@ -1,5 +1,6 @@
 "use client";
 
+import Script from "next/script";
 import { motion } from "framer-motion";
 import { ArrowDown, Sparkles } from "lucide-react";
 import { site, socials, founderVideoEmbed } from "@/lib/site-config";
@@ -145,11 +146,13 @@ export default function Hero() {
             <iframe
               src={founderVideoEmbed}
               title="Présentation de la fondatrice — Halyd's Secret"
-              allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
               allowFullScreen
+              referrerPolicy="strict-origin-when-cross-origin"
               className="absolute inset-0 h-full w-full border-0"
             />
           </div>
+          <Script src="https://player.vimeo.com/api/player.js" strategy="lazyOnload" />
           <motion.div
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
