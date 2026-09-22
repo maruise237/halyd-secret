@@ -1,23 +1,22 @@
 "use client";
 
+import Image from "next/image";
 import Reveal from "./Reveal";
-import { founderReel, founderVideoEmbed } from "@/lib/site-config";
+import { founderReel } from "@/lib/site-config";
 
 export default function About() {
   return (
     <section id="about" className="relative py-28 sm:py-36">
       <div className="mx-auto grid max-w-7xl gap-16 px-5 sm:px-8 lg:grid-cols-2 lg:items-center">
         <Reveal>
-          <div className="relative mx-auto w-full max-w-md overflow-hidden rounded-[1.75rem] ring-1 ring-rust/30 shadow-xl">
-            <div className="aspect-[9/16] w-full bg-ink">
-              <iframe
-                src={founderVideoEmbed}
-                title="Présentation de la fondatrice — Halyd's Secret"
-                allow="autoplay; fullscreen"
-                allowFullScreen
-                className="h-full w-full"
-              />
-            </div>
+          <div className="relative mx-auto aspect-[3/4] w-full max-w-md overflow-hidden rounded-[1.75rem] ring-1 ring-rust/30 shadow-xl">
+            <Image
+              src="/gallery/maquillage-1.jpg"
+              alt="Fondatrice Halyd's Secret"
+              fill
+              sizes="(min-width: 1024px) 400px, 80vw"
+              className="object-cover"
+            />
           </div>
         </Reveal>
 
@@ -50,7 +49,7 @@ export default function About() {
               rel="noreferrer"
               className="mt-9 inline-flex items-center gap-2 text-[12px] uppercase tracking-[0.2em] text-ink-soft transition-colors hover:text-rust-deep"
             >
-              Voir sur Instagram
+              Voir la vidéo de présentation
               <span className="h-px w-8 bg-ink-soft transition-all duration-300 group-hover:w-12" />
             </a>
           </Reveal>

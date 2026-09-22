@@ -77,22 +77,26 @@ export const products = [
     tag: "Entretien lace",
     desc: "Mousse teintée pour lace, action immédiate et longue tenue. Existe en 4 teintes.",
     price: "6 500 FCFA",
+    icon: "Droplet",
   },
   {
     name: "Lace Tint Spray",
     tag: "Entretien lace",
     desc: "Spray teinté pour tulle, change la couleur de la lace pour matcher votre peau.",
     price: "6 000 FCFA",
+    icon: "SprayCan",
   },
   {
     name: "Melting Spray",
     tag: "Styling",
     desc: "Fond la lace sans colle, pour une pose nette et une tenue renforcée.",
+    icon: "Wind",
   },
   {
     name: "Hair Wax Stick",
     tag: "Styling",
     desc: "Stick coiffant pour discipliner les baby hairs et fixer les finitions.",
+    icon: "Package",
   },
 ];
 

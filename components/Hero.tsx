@@ -1,9 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowDown, Sparkles } from "lucide-react";
-import { site, socials } from "@/lib/site-config";
+import { site, socials, founderVideoEmbed } from "@/lib/site-config";
 
 export default function Hero() {
   return (
@@ -142,24 +141,22 @@ export default function Hero() {
           transition={{ duration: 0.9, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
           className="relative mx-auto aspect-[3/4] w-full max-w-sm"
         >
-          <div className="relative h-full w-full overflow-hidden rounded-[2rem] shadow-2xl">
-            <Image
-              src="/gallery/coiffure-1.jpg"
-              alt="Halyd's Secret"
-              fill
-              sizes="(min-width: 1024px) 380px, 80vw"
-              className="object-cover"
-              priority
+          <div className="relative h-full w-full overflow-hidden rounded-[2rem] bg-ink shadow-2xl">
+            <iframe
+              src={founderVideoEmbed}
+              title="Présentation de la fondatrice — Halyd's Secret"
+              allow="autoplay; fullscreen"
+              allowFullScreen
+              className="h-full w-full"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-rust-deep/80 via-rust-deep/10 to-transparent" />
           </div>
           <motion.div
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             className="absolute -bottom-6 -left-6 rounded-2xl bg-cream px-5 py-4 shadow-xl ring-1 ring-rust/20"
           >
-            <p className="font-display font-semibold text-lg text-rust-deep">Officiellement ouvert</p>
-            <p className="text-[11px] uppercase tracking-wide text-ink-soft/70">Réservez votre moment</p>
+            <p className="font-display font-semibold text-lg text-rust-deep">Écouter notre fondatrice</p>
+            <p className="text-[11px] uppercase tracking-wide text-ink-soft/70">Son histoire, en vidéo</p>
           </motion.div>
         </motion.div>
       </div>
