@@ -1,17 +1,23 @@
 "use client";
 
 import Reveal from "./Reveal";
-import InstagramEmbed from "./InstagramEmbed";
-import { founderReel } from "@/lib/site-config";
+import { founderReel, founderVideoEmbed } from "@/lib/site-config";
 
 export default function About() {
   return (
     <section id="about" className="relative py-28 sm:py-36">
       <div className="mx-auto grid max-w-7xl gap-16 px-5 sm:px-8 lg:grid-cols-2 lg:items-center">
         <Reveal>
-          <div className="relative mx-auto w-full max-w-md">
-            <div className="pointer-events-none absolute -inset-4 rounded-[2rem] border border-gold/30" />
-            <InstagramEmbed url={founderReel} />
+          <div className="relative mx-auto w-full max-w-md overflow-hidden rounded-[1.75rem] ring-1 ring-gold/30 shadow-xl">
+            <div className="aspect-[9/16] w-full bg-ink">
+              <iframe
+                src={founderVideoEmbed}
+                title="Présentation de la fondatrice — Halyd's Secret"
+                allow="autoplay; fullscreen"
+                allowFullScreen
+                className="h-full w-full"
+              />
+            </div>
           </div>
         </Reveal>
 

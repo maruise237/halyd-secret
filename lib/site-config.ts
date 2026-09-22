@@ -26,6 +26,8 @@ export const socials = {
 };
 
 export const founderReel = "https://www.instagram.com/reel/DKwzbAnoeXQ/";
+export const founderVideoEmbed =
+  "https://drive.google.com/file/d/1y-T-7YwwE6r5g4C5hE26sinOEAAU28fZoGIqy5p1aB0/preview";
 
 export const nav = [
   { label: "Accueil", href: "#accueil" },
