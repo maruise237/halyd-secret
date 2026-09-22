@@ -25,10 +25,7 @@ export default function Contact() {
     <section id="contact" className="relative bg-ink py-28 text-cream sm:py-36">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal className="mx-auto max-w-xl text-center">
-          <p className="text-[11px] uppercase tracking-[0.3em] text-gold-soft">
-            Contact
-          </p>
-          <h2 className="mt-4 font-serif-display text-4xl sm:text-5xl">
+          <h2 className="font-serif-display text-4xl sm:text-5xl">
             Prenons{" "}
             <span className="italic text-gold-soft">rendez-vous</span>
           </h2>

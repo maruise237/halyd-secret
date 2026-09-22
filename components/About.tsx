@@ -17,10 +17,7 @@ export default function About() {
 
         <div>
           <Reveal>
-            <p className="text-[11px] uppercase tracking-[0.3em] text-gold-deep">
-              Notre histoire
-            </p>
-            <h2 className="mt-4 font-serif-display text-4xl sm:text-5xl">
+            <h2 className="font-serif-display text-4xl sm:text-5xl">
               Le secret d&rsquo;une{" "}
               <span className="italic text-gold-deep">passion</span>
             </h2>
@@ -36,7 +33,7 @@ export default function About() {
             </p>
           </Reveal>
           <Reveal delay={0.2}>
-            <blockquote className="mt-8 border-l-2 border-gold pl-6 font-serif-display text-2xl italic text-gold-deep">
+            <blockquote className="mt-8 font-serif-display text-3xl italic text-gold-deep">
               &laquo; Révéler la beauté, un secret à la fois. &raquo;
             </blockquote>
           </Reveal>

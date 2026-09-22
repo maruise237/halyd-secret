@@ -54,16 +54,6 @@ export default function Hero() {
 
       <div className="relative mx-auto grid w-full max-w-7xl gap-14 px-5 sm:px-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
         <div>
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            className="mb-6 inline-flex items-center gap-2 rounded-full border border-gold/40 px-4 py-1.5 text-[11px] uppercase tracking-[0.25em] text-gold-deep"
-          >
-            <Image src="/logo.jpg" alt="" width={16} height={16} className="rounded-full" />
-            Institut de beauté &amp; cosmétiques
-          </motion.div>
-
           <h1 className="font-serif-display text-balance text-[13vw] leading-[0.98] text-ink sm:text-[8vw] lg:text-[5.2vw]">
             <motion.span
               initial={{ opacity: 0, y: 30 }}

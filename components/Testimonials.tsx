@@ -10,13 +10,13 @@ export default function Testimonials() {
     <section className="relative py-28 sm:py-36">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal className="mx-auto max-w-xl text-center">
-          <p className="text-[11px] uppercase tracking-[0.3em] text-gold-deep">
-            Elles nous font confiance
-          </p>
-          <h2 className="mt-4 font-serif-display text-4xl sm:text-5xl">
-            Ce qu&rsquo;elles{" "}
-            <span className="italic text-gold-deep">en disent</span>
+          <h2 className="font-serif-display text-4xl sm:text-5xl">
+            Elles nous font{" "}
+            <span className="italic text-gold-deep">confiance</span>
           </h2>
+          <p className="mt-5 text-sm leading-relaxed text-ink-soft/75">
+            Ce qu&rsquo;elles disent après leur visite.
+          </p>
         </Reveal>
 
         <div className="mt-16 grid gap-6 sm:grid-cols-3">

@@ -11,10 +11,7 @@ export default function Gallery() {
     <section id="galerie" className="relative py-28 sm:py-36">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal className="mx-auto max-w-xl text-center">
-          <p className="text-[11px] uppercase tracking-[0.3em] text-gold-deep">
-            Galerie
-          </p>
-          <h2 className="mt-4 font-serif-display text-4xl sm:text-5xl">
+          <h2 className="font-serif-display text-4xl sm:text-5xl">
             Des instants{" "}
             <span className="italic text-gold-deep">de beauté</span>
           </h2>
